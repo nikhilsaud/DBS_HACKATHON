@@ -1,9 +1,9 @@
 # FRONTEND MODULES!
 
 ## Table of contents:
-  - ADMIN
-  - CUSTOMERS
-  - AUTHENTICATION
+    - ADMIN
+    - CUSTOMERS
+    - AUTHENTICATION
 
 -  How to run?
 -  Business understanding
