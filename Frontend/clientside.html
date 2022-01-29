@@ -4,28 +4,29 @@
 
 	<style>
 body	{ background-color: #000000;
-          color: #0C1584;
+          color: #ff0000;
 }  
 table,tr,td{ font-family: monospace;
        font-weight: bold;
+
 }
-#result{ font-weight: bold;
-         color: #0000FF;}
 
-h1{ color: #FF0000;
+h1{ color: #ff0000;
     font-family: monospace;
-    text-align: center;}
-
-
+    text-align: center;
+}
+ 
+  
     </style>
 <form  name="book">
 <center>
-<h1>Stock Order - Client Screen</h1>
+<h1>Book Order - Client Screen</h1>
 	<table>
 		<tr>
-		<td>Search Stock</td>
+		<td bgcolor="#ff0000"><font color="#ffffff">Search Stock</font></td></tr>
+		<tr>
 		<td><input type="text" list="stock" name="stock" placeholder="DBS..." required>
-		 <datalist id="books">
+		 <datalist id="stock">
   			<option value="stock1">
 		  	<option value="stock2">
   			<option value="stock3">
@@ -35,32 +36,34 @@ h1{ color: #FF0000;
 		</tr>
 
 		<tr>
-			<td>Order Type</td>
+			<td bgcolor="#ff0000"><font color="#ffffff">Order Type</font></td></tr><tr>
 			<td><input type="text" list="ordertype" name="otype" autocomplete="on" placeholder="Limit or Market" required>
 			<datalist id="ordertype">
   			<option value="Limit">
 		  	<option value="Market">
-
+  			
 			</datalist>
 			</td>
 		</tr>
+		
+		<tr>
+		<td bgcolor="#ff0000"><font color="#ffffff">Price</font></td></tr><tr>
+		<td> <input type="number" name="price" placeholder="Price.." >
+		</tr>
+		<tr>
+		<td bgcolor="#ff0000"><font color="#ffffff">Quanity</font></td></tr><tr>
+		<td><input type="number" name="quantity" placeholder="Quantity"></td>
+		</tr>
 
-		<tr>
-		<td>Price</td>
-		<td> <input type="number" name="price" placeholder="" >
-		</tr>
-		<tr>
-		<td>Quanity</td>
-		<td><input type="number" name="quantity" ></td>
-		</tr>
+		
 
         <tr>
-		<td><button type="submit" name="placeorder">Place Order</button></td>
-
+		<td><button style="background-color:red; color:white" type="submit" name="placeorder">Place Order</button></td>
+		
 		</tr>
-
+        
 	</table>
-
+	
 	</center>
 </form>
 </body>
