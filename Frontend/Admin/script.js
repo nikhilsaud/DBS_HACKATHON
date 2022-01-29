@@ -1,3 +1,4 @@
+let mentioned_price = 150;
 let btnAdd = document.querySelector('button');
 let table = document.querySelector('table');
 
@@ -31,6 +32,9 @@ btnAdd.addEventListener('click', () => {
     let status = statusInput.value;
     let date = dateInput.value;
 
+    if (mentioned_price > price) {
+        status = "NOT PLACED";
+    }   
 
     let template = `
                 <tr>
